@@ -39,3 +39,5 @@ public class LargestOfThree {
         scanner.close();
     }
 }
+
+// I added the flowchart in the readme.md file
