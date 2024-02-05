@@ -63,34 +63,7 @@ Ensure your code compiles and runs correctly without errors.
 Include at least one example of each method being used in your main method.
 
 ## 3) LargestOfThree.java
-### Overview
-This project, titled "LargestOfThree.java," is designed to help you understand conditional statements in Java. Your task is to write a program that asks the user for three integers, determines the largest among them using nested if statements, and outputs the largest integer.
-### Objectives
-Practice using if and else statements in Java.
-Understand the concept of nested conditional statements.
-Develop skills in logical reasoning and problem-solving in Java.
-### Requirements
-Your program should prompt the user to enter three integers using Java’s Scanner class.
-Use nested if statements to determine the largest of the three integers.
-Output the largest integer to the user.
-### Suggested Implementation Steps
-Write code to get three integers from the user using the Scanner class.
-Implement nested if statements to find the largest integer.
-Display the largest integer with a message.
-Test your program with various sets of numbers to ensure it works correctly.
-### Tips
-Make sure to handle cases where two or all three numbers are equal.
-Pay attention to your program's readability and use clear variable names.
-### Extension Ideas
-Modify the program to determine the largest integer using compound test statements (using logical operators like && and ||) instead of nested if statements.
-Compare the two methods (nested if vs. compound decision statements) and determine which one is easier to understand and why.
-### Extra Credit Assignment
-Create a flowchart representing the algorithm of your program. This will help you visualize the decision-making process in your code.
-### Submission Guidelines
-Submit your Java source code file with comments explaining each part of your code.
-Ensure your program accurately identifies the largest integer in all test cases.
-Include your thoughts on which method (nested if or compound decision statements) you found more understandable, and why.
-For extra credit, submit a flowchart of your program's logic.
+****flowchart****
 
 
 ![flowchart-of-largest-among-three-numbers](https://github.com/BlackCatCode22/module-02-abdullah31416/assets/156399261/8848135d-324e-45fc-a76c-95d8c7d09d16)
