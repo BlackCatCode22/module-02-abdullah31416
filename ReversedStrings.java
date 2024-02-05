@@ -1,30 +1,45 @@
 import java.util.Scanner;
 
-public class ReversedStrings {
+public class ReverseString {
     public static void main(String[] args) {
-
-        System.out.println("Welcome to My Strings program");
-
-        // Create a Scanner object to get a string from the user.
+        // Create a Scanner object to get user input
         Scanner scanner = new Scanner(System.in);
-        System.out.println("\n Please enter a string of characters...\n");
+
+        // Prompt the user to enter a string
+        System.out.print("Enter a string: ");
+        
+        // Read the user's input as a string
         String userInput = scanner.nextLine();
 
-        // Output the line to reverse.
-        System.out.println("\n\nThe string to reverse is: " + userInput + "\n\n");
+        // Call the reverseString function to reverse the input
+        String reversed = reverseString(userInput);
 
-        // Strings are a data structure meaning we can access individual characters like this
-        char aCharFromAString = userInput.charAt(3);
+        // Display the reversed string
+        System.out.println("Reversed string: " + reversed);
 
-        System.out.println("\n\n aCharFromAString is " + aCharFromAString);
+        // Close the scanner to release resources
+        scanner.close();
+    }
 
-        String reversedString = "";
-        for (int i = 0; i < userInput.length(); i++) {
-            System.out.println("\n  " + userInput.charAt(i) );
-            reversedString = userInput.charAt(i) + reversedString;
+    public static String reverseString(String input) {
+        // Convert the input string into a character array
+        char[] charArray = input.toCharArray();
+        
+        // Initialize two pointers for reversing the string
+        int start = 0;
+        int end = input.length() - 1;
+
+        // Swap characters from both ends until the pointers meet
+        while (start < end) {
+            char temp = charArray[start];
+            charArray[start] = charArray[end];
+            charArray[end] = temp;
+            start++;
+            end--;
         }
 
-        System.out.println("\n reversed Str = " + reversedString);
-
+        // Convert the character array back to a string
+        return new String(charArray);
     }
 }
+
